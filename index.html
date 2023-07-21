@@ -126,7 +126,7 @@
         .secondSection {
             max-width: 80vw;
             margin: auto;
-            height: 80vh;
+            height: 60vh;
 
         }
 
@@ -148,9 +148,9 @@
 
         .secondSection .vertical {
             height: 93px;
-            width: 1px;
+            width: 2px;
             background-color: white;
-            margin: 0 120px;
+            margin: 0 8vw;
 
         }
 
@@ -175,7 +175,7 @@
         .thirdSection {
             max-width: 80vw;
             margin: auto;
-            height: 80vh;
+            height: 60vh;
 
         }
 
@@ -194,17 +194,19 @@
 
         .thirdSection .vertical {
             height: 93px;
-            width: 1px;
+            width: 2px;
             background-color: white;
-            margin: 0 151px;
+            margin: 0 8vw;
 
         }
 
         .third-vertical-text {
 
             position: relative;
-            top: 97px;
-            width: 150px
+            top: 75px;
+            width: 150px;
+            
+            
         }
 
         .vertical-desc {
@@ -247,26 +249,145 @@
             color: grey;
             padding: 12px 0;
         }
+
+        @media screen and (max-width: 1400px) {
+            .firstSection {
+                flex-direction: column-reverse;
+            }
+
+            .footer {
+                margin: 100px 0;
+            }
+
+            .box {
+                flex-direction: column;
+
+            }
+
+            .secondSection .vertical {
+                height: unset;
+            }
+
+            .secondSection .box {
+                width: 80vw;
+            }
+
+            .vertical-text {
+                left: 45px;
+                top: 3px;
+            }
+
+            .vertical-desc {
+
+                left: 45px;
+            }
+
+            .image-top {
+                top: 32px;
+            }
+
+            .thirdSection .box {
+                width: 80vw;
+
+            }
+
+            .thirdSection .vertical {
+                margin-left: 35px;
+
+                height: 150px;
+                width: 2px;
+            }
+
+            .vertical-desc {
+                left: 20px;
+
+            }
+
+            .third-vertical-text {
+                width: 220px;
+                margin-bottom: 40px;
+                left: 70px
+            }
+
+            .thirdSection .third-span {
+                margin-bottom: 80px;
+                left: 20px
+            }
+
+            nav {
+                flex-direction: column;
+
+            }
+
+            .leftSection {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .rightSection {
+                width: 720px !important;
+                display: flex;
+                justify-content: center;
+
+
+            }
+
+            .rightSection img {
+                width: 50vw;
+                margin-bottom: 70px;
+            }
+
+            .secondSection {
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .thirdSection {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            body {
+                min-width: fit-content;
+
+            }
+
+            .thirdSection {
+                height: 100vh;
+            }
+
+
+
+
+
+        }
     </style>
 </head>
 
 <body>
-        <nav>
-            <div class="left">Sai Ram's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Education</a></li>
-                    <li><a href="/">Lets Discuss</a></li>
-                </ul>
-            </div>
-        </nav>
+    <nav>
+        <div class="left">Sai Ram's Portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Education</a></li>
+                <li><a href="/">Lets Discuss</a></li>
+            </ul>
+        </div>
+    </nav>
     </header>
     <main>
         <section class="firstSection">
-            <div class="leftSection">Hi, My name is <span class="purple">SaiRam</span>
+            <div class="leftSection">
+                <div>Hi, My name is <span class="purple">SaiRam</span></div>
                 <div>and I am a passionate</div>
 
                 <span id="element"></span>
@@ -325,7 +446,6 @@
         </section>
         <hr>
         <section class="thirdSection">
-
             <h1>Education</h1>
             <div class="box">
                 <div class="vertical">
@@ -334,8 +454,9 @@
                         JB INSTITUTE OF ENGINEERING AND TECHNOLOGY<div>
                             (2019-2023)
                         </div>
-                        <div class="vertical-desc">Bachelor's(B.tech)</div>
-                        <span class="third-span">76%</span>
+                        <div class="vertical-desc">Bachelor's(B.tech)
+                            <span class="third-span">76%</span>
+                        </div>
                     </div>
                 </div>
                 <div class="vertical">
@@ -343,8 +464,9 @@
                     <div class="third-vertical-text">
                         VIDYABHARATHI JUNIOR COLLEGE
                         <div> (2017-2019)</div>
-                        <div class="vertical-desc">Intermediate(12th)</div>
-                        <span class="third-span">83.9%</span>
+                        <div class="vertical-desc">Intermediate(12th)
+                            <span class="third-span">83.9%</span>
+                        </div>
 
 
                     </div>
@@ -354,8 +476,9 @@
                     <div class="third-vertical-text">
                         VANI VIDYALAYAM
                         <div>(2016-2017)</div>
-                        <div class="vertical-desc">School(10th)</div>
-                        <span class="third-span">88%</span>
+                        <div class="vertical-desc">School(10th)
+                            <span class="third-span">88%</span>
+                        </div>
 
                     </div>
                 </div>
@@ -406,8 +529,8 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Front-End Devloper'],
-            typeSpeed: 50,
+            strings: ['Web Developer', 'Front-End Developer'],
+            typeSpeed: 30,
         });
     </script>
 
