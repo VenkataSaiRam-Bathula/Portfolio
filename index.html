@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai-Developer portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(4, 4, 47);
+
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+
+
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+
+            color: rgb(168, 168, 233);
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+
+        }
+
+        .left {
+            font-size: 1.4rem;
+
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            font-size: 3rem;
+
+
+
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftSection .btn {
+
+            padding: 12px;
+
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+
+            width: 80%;
+
+        }
+
+        .text-grey {
+            color: rgb(231, 220, 220);
+            font-size: 0.7rem;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background-color: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+
+
+
+
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+
+        }
+
+        .vertical-text {
+
+            position: relative;
+            top: 75px;
+            font-size: 20px;
+
+
+
+        }
+
+        .thirdSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+
+        .thirdSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .thirdSection .box {
+            background-color: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+
+        }
+
+        .thirdSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 151px;
+
+        }
+
+        .third-vertical-text {
+
+            position: relative;
+            top: 97px;
+            width: 150px
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 6px;
+            columns: grey;
+            width: 150px;
+            font-size: 12px;
+
+
+
+        }
+
+        .thirdSection .third-span {
+            font-size: 10px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            height: 233px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 120px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: grey;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+        <nav>
+            <div class="left">Sai Ram's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Education</a></li>
+                    <li><a href="/">Lets Discuss</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi, My name is <span class="purple">SaiRam</span>
+                <div>and I am a passionate</div>
+
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+
+                </div>
+
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" />
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-grey">What I have learned
+                so far</span>
+            <h1>Skills</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="python.png" />
+                    <div class="vertical-text">
+                        PYTHON
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="MySql.png" />
+                    <div class="vertical-text">
+                        MySql
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="html.png" />
+                    <div class="vertical-text">
+                        HTML
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Css.png" />
+                    <div class="vertical-text">
+                        CSS
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="js.png" />
+                    <div class="vertical-text">
+                        JavaScript
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="thirdSection">
+
+            <h1>Education</h1>
+            <div class="box">
+                <div class="vertical">
+
+                    <div class="third-vertical-text">
+                        JB INSTITUTE OF ENGINEERING AND TECHNOLOGY<div>
+                            (2019-2023)
+                        </div>
+                        <div class="vertical-desc">Bachelor's(B.tech)</div>
+                        <span class="third-span">76%</span>
+                    </div>
+                </div>
+                <div class="vertical">
+
+                    <div class="third-vertical-text">
+                        VIDYABHARATHI JUNIOR COLLEGE
+                        <div> (2017-2019)</div>
+                        <div class="vertical-desc">Intermediate(12th)</div>
+                        <span class="third-span">83.9%</span>
+
+
+                    </div>
+                </div>
+                <div class="vertical">
+
+                    <div class="third-vertical-text">
+                        VANI VIDYALAYAM
+                        <div>(2016-2017)</div>
+                        <div class="vertical-desc">School(10th)</div>
+                        <span class="third-span">88%</span>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>SaiRam's Developer Portfolio</h3>
+
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Education</li>
+                    <li>Lets Discuss</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Education</li>
+                    <li>Lets Discuss</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Education</li>
+                    <li>Lets Discuss</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169;sairamportfolio45.co | All rights Reserved
+
+
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Front-End Devloper'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
